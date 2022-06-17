@@ -11,5 +11,9 @@ public class Folder extends FolderRef {
         this.name = name;
         subFolders = new List<FolderRef>();
         threads = new List<ThreadRef>();
+        super(id);
+        this.name = name;
+        subFolders = new List<FolderRef>();
+        threads = new List<ThreadRef>();
     }
 }
