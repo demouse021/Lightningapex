@@ -24,6 +24,12 @@ public class Quip implements IQuip {
         }
         return result;
     }
+      Matcher match = tablePattern.matcher(response.html);
+        while (match.find()) {
+            result.sheets.add(ThreadSheet.parseHtml(match.group()));
+        }
+        return result;
+    }
 
     public void saveSpreadsheetData(Thread thread, ThreadSheet sheet, List<ThreadCell> cellsToUpdate) {
         if (thread == null) {
