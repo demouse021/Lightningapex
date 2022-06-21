@@ -2,9 +2,16 @@ public class Quip implements IQuip {
     
     private IQuipAPI quipApi;
     
-    public Quip(IQuipAPI quipApi) {
-        this.quipApi = quipApi;
-    }
+/**
+ * @description Hello World
+ */
+public class HelloWorld {
+    /**
+     * @description Bar
+     * @return Bar
+     */
+    public Object bar() { return null; }
+}
 
     private ThreadResponse findThreadByNameOrId(String nameOrId, Boolean isName) {
         CurrentUserResponse currentUser = quipApi.getCurrentUser();
